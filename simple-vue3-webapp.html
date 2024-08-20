@@ -94,7 +94,8 @@
                 const heroName = ref('Super Coder')
                 const heroPower = ref('Programación a la Velocidad de la Luz')
                 const heroWeakness = ref('Cafeína Baja')
-                const heroImage = ref('https://api.dicebear.com/6.x/bottts/svg?seed=SuperCoder')
+                // const heroImage = ref('https://api.dicebear.com/6.x/bottts/svg?seed=SuperCoder')
+                const heroImage = ref(`https://api.multiavatar.com/alien.svg`)
 
                 const generateHero = () => {
                     const names = ['Maestro Código', 'Defensor de los Datos', 'Comandante de la Nube', 'Guardián del Frontend', 'Paladín del Protocolo']
@@ -104,7 +105,8 @@
                     heroName.value = names[Math.floor(Math.random() * names.length)]
                     heroPower.value = powers[Math.floor(Math.random() * powers.length)]
                     heroWeakness.value = weaknesses[Math.floor(Math.random() * weaknesses.length)]
-                    heroImage.value = `https://api.dicebear.com/6.x/bottts/svg?seed=${Math.random()}`
+                    // heroImage.value = `https://api.dicebear.com/6.x/bottts/svg?seed=${Math.random()}`
+                    heroImage.value = `https://api.multiavatar.com/${Math.random()}.svg`
                 }
 
                 return {
